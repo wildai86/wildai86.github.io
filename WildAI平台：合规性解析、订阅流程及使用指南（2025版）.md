@@ -2,7 +2,7 @@
 
 ## 一、平台概览
 
-WildAI 前身为 WildCard，于 2025 年 9 月 20 日完成品牌升级并正式更名，同步启用新官方网址[https://9191.ai?code=MASK](https://9191.ai?code=MASK)。平台核心定位为 “海外 AI 服务订阅通道”，与前身相比，不再提供虚拟卡号相关功能，转而聚焦 ChatGPT Plus、Claude Pro 等海外热门 AI 工具的订阅服务；支付方式上支持微信、银行卡等国内主流渠道，降低用户跨境订阅门槛。
+WildAI 前身为 WildCard，于 2025 年 9 月 20 日完成品牌升级并正式更名，同步启用新官方网址<https://bewild.ai?code=MASK>。平台核心定位为 “海外 AI 服务订阅通道”，与前身相比，不再提供虚拟卡号相关功能，转而聚焦 ChatGPT Plus、Claude Pro 等海外热门 AI 工具的订阅服务；支付方式上支持微信、银行卡等国内主流渠道，降低用户跨境订阅门槛。
 
 ## 二、核心优势
 
@@ -22,7 +22,7 @@ WildAI 前身为 WildCard，于 2025 年 9 月 20 日完成品牌升级并正式
 
 ### （一）账号注册
 
-1. 访问官方网址[https://9191.ai?cod](https://9191.ai?code=MASK)[e=MAS](https://9191.ai?code=MASK)[K](https://9191.ai?code=MASK)，点击首页 “注册” 按钮；
+1. 访问官方网址<https://bewild.ai?code=MASK>，点击首页 “注册” 按钮；
   
 2. 输入常用邮箱（建议绑定手机号，提升账号安全性），设置密码并完成邮箱验证；
   
