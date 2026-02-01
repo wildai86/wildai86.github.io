@@ -1,6 +1,8 @@
 # WildAI官网及保姆级注册教程2025最新版
 
-WildAI 是一个为国内用户提供便捷海外 AI 服务订阅渠道的平台，其官网地址为<https://bewild.ai?code=MASK>以下将详细介绍 WildAI 的注册教程。
+WildAI 是一个为国内用户提供便捷海外 AI 服务订阅渠道的平台，其官网地址为<https://bewild.ai?code=MASK>（邀请码必填：**MASK**，有优惠）
+
+以下将详细介绍 WildAI 的注册教程。
 
 ## 一、注册账号
 
