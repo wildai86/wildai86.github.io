@@ -2,7 +2,7 @@
 
 ## 一、WildAI 注册入口
 
-WildAI 的注册入口为<https://bewild.ai?code=MASK>访问该网站后，点击右上角的“登录/注册”按钮，选择“使用邮箱注册登录。
+WildAI 的注册入口为<https://bewild.ai?code=MASK>（邀请码必填：**MASK**，有优惠）访问该网站后，点击右上角的“登录/注册”按钮，选择“使用邮箱注册登录。
 
 ## 二、WildAI 使用指南
 
