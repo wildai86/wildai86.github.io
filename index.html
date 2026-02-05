@@ -3,77 +3,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 网页标题 -->
-    <title>WildAI-海外AI服务专业代充平台</title>
-    <!-- 网页描述 -->
-    <meta name="description" content="WildAI专注于海外AI服务订阅，提供丰富多样的AI工具，涵盖文本生成、图像识别、语音交互等场景。无论是个人学习、创意创作，还是企业数据分析、智能客服，WildAI都能满足需求，助力用户在AI时代脱颖而出。">
-    <!-- 网页关键词 -->
-    <meta name="keywords" content="AI服务代充, 海外AI工具, 文本生成, 图像识别, 语音交互, 智能客服">
-    <!-- Open Graph 标记 -->
-    <meta property="og:title" content="WildAI-海外AI服务代充平台">
-    <meta property="og:description" content="WildAI专注于海外AI服务代充与合租，提供丰富多样的AI工具，涵盖文本生成、图像识别、语音交互等场景。无论是个人学习、创意创作，还是企业数据分析、智能客服，WildAI都能满足需求，助力用户在AI时代脱颖而出。">
-    <meta property="og:image" content="https://example.com/wildai-logo.svg">
+    <title>WildAI - 海外AI服务专业代充平台 | ChatGPT/Claude/Midjourney合租</title>
+    <meta name="description" content="WildAI是专业的海外AI服务代充与合租平台，提供ChatGPT Plus、Claude Pro、Midjourney、GPT-4等热门AI工具订阅服务。安全可靠、价格透明、即开即用，支持个人与企业用户。">
+    <meta name="keywords" content="AI代充,ChatGPT Plus合租,Claude订阅,Midjourney代付,海外AI工具,AI账号购买,GPT-4订阅,AI服务充值">
+    <meta name="author" content="WildAI">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bewild.ai?code=MASK">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://bewild.ai?code=MASK">
-    <!-- 添加 Schema.org 结构化数据标记 -->
+    <meta property="og:title" content="WildAI - 海外AI服务专业代充平台">
+    <meta property="og:description" content="专业的ChatGPT Plus、Claude、Midjourney等海外AI工具代充与合租服务，安全可靠，即开即用。">
+    <meta property="og:image" content="https://bewild.ai/images/og-image.jpg">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bewild.ai?code=MASK">
+    <meta property="twitter:title" content="WildAI - 海外AI服务专业代充平台">
+    <meta property="twitter:description" content="专业的ChatGPT Plus、Claude、Midjourney等海外AI工具代充与合租服务。">
+    <meta property="twitter:image" content="https://bewild.ai/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "WildAI-海外AI服务代充平台",
-      "description": "WildAI专注于海外AI服务代充与合租，提供丰富多样的AI工具，涵盖文本生成、图像识别、语音交互等场景。无论是个人学习、创意创作，还是企业数据分析、智能客服，WildAI都能满足需求，助力用户在AI时代脱颖而出。",
-      "image": "https://example.com/wildai-logo.svg",
-      "url": "https://bewild.ai?code=MASK"
+      "@type": "WebSite",
+      "name": "WildAI",
+      "url": "https://bewild.ai?code=MASK",
+      "description": "海外AI服务专业代充与合租平台",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bewild.ai/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WildAI",
+      "url": "https://bewild.ai?code=MASK",
+      "logo": "https://bewild.ai/images/logo.png",
+      "description": "专业的海外AI服务代充平台",
+      "sameAs": [
+        "https://github.com/wildai",
+        "https://twitter.com/wildai"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Chinese", "English"]
+      }
+    }
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --accent: #06b6d4;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        * {
             margin: 0;
-            padding: 20px;
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
-        header {
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 80px 0 100px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .invite-code {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .invite-code strong {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            letter-spacing: 2px;
+        }
+        
+        /* Features Grid */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .feature-card p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, #f8fafc, white);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .service-item:hover {
+            border-color: var(--primary);
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .service-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .service-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 50px auto 0;
+            position: relative;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            z-index: 0;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+        }
+        
+        .step h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        
+        .step p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
             margin-bottom: 30px;
         }
-        h1 {
-            color: #2c3e50;
-            font-size: 24px;
-        }
-        a {
-            color: #007bff;
+        
+        .cta-button-light {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 50px;
             text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
         }
-        a:hover {
-            text-decoration: underline;
+        
+        .cta-button-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        
+        .qr-section {
+            margin-bottom: 30px;
+        }
+        
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            background: white;
+            padding: 12px;
+            border-radius: 16px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .qr-code:hover {
+            transform: scale(1.05);
+        }
+        
+        .qr-label {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .hero { padding: 60px 0 80px; }
+            .process-steps { flex-direction: column; gap: 40px; }
+            .process-steps::before { display: none; }
+            .step { width: 100%; }
+            .features-grid, .services-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        :focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
         }
     </style>
+<base target="_blank">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>WildAI海外AI服务代充平台简介</h1>
-            <p>WildAI致力于为用户提供全球领先的AI服务代充合租，涵盖文本生成、图像识别、语音交互等多种AI工具。订阅费用因服务类型和时长而异，用户可根据自身需求灵活选择。</p>
-        </header>
-        <main>
-            <article>
-                <h3>WildAI平台优势</h3>
-                <p>技术先进：与国际顶尖AI研发团队合作，确保AI工具的性能和准确性处于行业前沿；服务全面：提供从个人学习到企业应用的全方位AI解决方案，满足不同用户的需求；安全保障：采用先进的加密技术和数据保护措施，保障用户数据的隐私和安全；更新及时：紧跟AI技术的发展趋势，定期更新AI工具和服务，为用户提供最新、最优质的体验。</p>
-            </article>
-            <article>
-                <h3>WildAI订阅流程指南</h3>
-                <p>点击下面的链接进入WildAI注册登录页面，选择所需的服务类型和时长，填写相关信息并完成支付，即可开始使用WildAI的AI服务。</p>
-                <a href="https://bewild.ai?code=MASK">WildAI注册与登录入口，邀请码必填：MASK</a>
-            </article>
-        </main>
-    </div>
-    <footer style="text-align: center; margin-top: 30px;">
-        <img src="images/qq1.jpg" alt="qq二维码" style="width: 200px; height: 200px; margin: 0 auto; display: block;">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">🚀 专业海外AI服务代充平台</span>
+                <h1>WildAI<br><span style="font-size: 0.6em; font-weight: 400;">让AI触手可及</span></h1>
+                <p class="hero-subtitle">
+                    提供ChatGPT Plus、Claude Pro、Midjourney、GPT-4等全球领先AI工具的代充与合租服务。
+                    安全可靠、价格透明、即开即用，助力个人与企业轻松迈入AI时代。
+                </p>
+                <a href="https://bewild.ai?code=MASK" class="cta-button" rel="nofollow noopener" target="_blank">
+                    立即注册使用
+                </a>
+                <p class="invite-code">
+                    邀请码：<strong>MASK</strong>（注册时必填）
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">为什么选择 WildAI？</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>安全可靠</h3>
+                    <p>采用银行级加密技术，严格保护用户隐私与数据安全。正规渠道充值，账号稳定无忧，支持售后保障。</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>即开即用</h3>
+                    <p>自动化处理流程，支付成功后秒级开通。无需复杂配置，立享GPT-4、Claude 3等顶级AI模型服务。</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>价格透明</h3>
+                    <p>无隐藏费用，支持多种支付方式。提供个人独享与多人合租多种方案，灵活适配不同预算需求。</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>服务全面</h3>
+                    <p>覆盖ChatGPT、Claude、Midjourney、Perplexity等主流AI平台。从文本生成到图像创作，一站式满足。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">支持的AI服务</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🤖</div>
+                    <div class="service-content">
+                        <h4>ChatGPT Plus</h4>
+                        <p>GPT-4 Turbo、DALL·E 3绘图、联网搜索、代码解释器等高级功能，个人与企业首选。</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🧠</div>
+                    <div class="service-content">
+                        <h4>Claude Pro</h4>
+                        <p>Anthropic旗下最强AI助手，Claude 3 Opus/Sonnet模型，超长上下文，逻辑推理能力卓越。</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🎨</div>
+                    <div class="service-content">
+                        <h4>Midjourney</h4>
+                        <p>全球领先的AI图像生成工具，支持V6版本，创作高质量艺术图像、商业设计素材。</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🔍</div>
+                    <div class="service-content">
+                        <h4>Perplexity Pro</h4>
+                        <p>AI搜索引擎，实时联网获取信息，GPT-4与Claude双模型支持，研究学习利器。</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">📝</div>
+                    <div class="service-content">
+                        <h4>Notion AI</h4>
+                        <p>智能写作助手，自动生成内容、总结文档、翻译润色，提升笔记与协作效率。</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🎵</div>
+                    <div class="service-content">
+                        <h4>Suno AI</h4>
+                        <p>AI音乐生成工具，输入文字即可创作完整歌曲，支持多种风格与乐器编排。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">简单三步，即刻开启</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>注册账号</h4>
+                    <p>点击注册按钮<br>填写邀请码 MASK</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>选择服务</h4>
+                    <p>浏览AI工具列表<br>选择订阅方案</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>支付开通</h4>
+                    <p>完成安全支付<br>秒级开通使用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好体验AI的强大了吗？</h2>
+                <p>加入数万用户的选择，立即开启您的AI之旅</p>
+                <a href="https://bewild.ai?code=MASK" class="cta-button-light" rel="nofollow noopener" target="_blank">
+                    免费注册 WildAI →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="qr-section">
+                <img src="images/qq1.jpg" alt="WildAI客服QQ二维码" class="qr-code" loading="lazy">
+                <p class="qr-label">扫码联系客服咨询</p>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 WildAI. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+                    免责声明：WildAI仅提供代充技术服务，AI工具版权归原平台所有。请遵守各平台使用条款。
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
