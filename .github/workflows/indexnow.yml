@@ -1,0 +1,37 @@
+name: Push to Bing
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Push URLs to Bing
+        run: |
+          KEY="a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6"
+          SITE="https://wildai86.github.io"
+          
+          URLS=$(find . -name "*.md" ! -name "README.md" | sed 's|^\./||; s|\.md$||; s| |%20|g' | awk -v site="$SITE" '{print site "/" $0}')
+          URLS="$SITE"$'\n'"$URLS"
+          
+          JSON=$(echo "$URLS" | jq -R . | jq -s .)
+          
+          BODY=$(jq -n \
+            --arg host "wildai86.github.io" \
+            --arg key "$KEY" \
+            --arg keyLocation "$SITE/$KEY.txt" \
+            --argjson urlList "$JSON" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+          
+          echo "推送的URL："
+          echo "$URLS"
+          echo ""
+          
+          curl -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "$BODY" \
+            -w "\nHTTP状态码: %{http_code}\n"
