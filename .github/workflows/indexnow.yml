@@ -4,13 +4,14 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Generate sitemap.xml
         run: |
@@ -20,7 +21,6 @@ jobs:
           echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
           
-          # 添加首页
           echo "  <url>" >> sitemap.xml
           echo "    <loc>$SITE/</loc>" >> sitemap.xml
           echo "    <lastmod>$DATE</lastmod>" >> sitemap.xml
@@ -28,7 +28,6 @@ jobs:
           echo "    <priority>1.0</priority>" >> sitemap.xml
           echo "  </url>" >> sitemap.xml
           
-          # 添加所有文章
           find . -name "*.md" ! -name "README.md" | sed 's|^\./||' | while read file; do
             URL_PATH=$(echo "$file" | sed 's|\.md$||; s| |%20|g')
             echo "  <url>" >> sitemap.xml
@@ -40,8 +39,6 @@ jobs:
           done
           
           echo '</urlset>' >> sitemap.xml
-          
-          echo "生成的 sitemap.xml："
           cat sitemap.xml
 
       - name: Commit sitemap.xml
