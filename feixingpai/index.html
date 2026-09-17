@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行派 - 一站式数字订阅服务平台 | ChatGPT/Claude低价订阅</title>
+    <meta name="description" content="飞行派（Feixingpai）已备案运营，4年老牌平台。提供ChatGPT Plus、Netflix、Disney+、Spotify、Grok、Claude等65+种数字订阅服务。支付宝付款，自动发货，人工一对一售后，10万+订单信赖之选。">
+    <meta name="keywords" content="飞行派,Feixingpai,ChatGPT代充,Netflix合租,Disney+合租,Spotify合租,Grok代充,流媒体账号,AI工具订阅">
+    <meta name="author" content="wildai86">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="飞行派 - 一站式数字订阅服务平台">
+    <meta property="og:description" content="飞行派（Feixingpai）已备案运营，4年老牌平台。提供ChatGPT Plus、Netflix、Disney+、Spotify、Grok、Claude等65+种数字订阅服务。支付宝付款，自动发货，人工一对一售后。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wildai86.github.io/feixingpai">
+    <meta property="og:site_name" content="飞行派官方推荐">
+    <link rel="canonical" href="https://wildai86.github.io/feixingpai">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"飞行派官方推荐","url":"https://wildai86.github.io/feixingpai","description":"飞行派（Feixingpai）已备案运营，4年老牌平台。提供ChatGPT Plus、Netflix、Disney+、Spotify、Grok、Claude等65+种数字订阅服务。支付宝付款，自动发货。"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"飞行派","url":"https://spotifyzc.com/?incode=jAnlL4","description":"一站式数字订阅服务平台"}
+    </script>
+    <style>
+        :root{--primary:#f97316;--primary-dark:#ea580c;--secondary:#0ea5e9;--accent:#8b5cf6;--dark:#0f172a;--darker:#020617;--light:#f8fafc;--gray:#64748b;--success:#10b981;--warning:#f59e0b}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--darker);color:var(--light);line-height:1.7;overflow-x:hidden}
+        ::-webkit-scrollbar{width:8px}
+        ::-webkit-scrollbar-track{background:var(--dark)}
+        ::-webkit-scrollbar-thumb{background:var(--primary);border-radius:4px}
+        .stars-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background:radial-gradient(ellipse at 20% 80%,rgba(249,115,22,0.12) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(14,165,233,0.1) 0%,transparent 50%),radial-gradient(ellipse at 50% 50%,rgba(139,92,246,0.05) 0%,transparent 70%),var(--darker)}
+        .stars{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+        .star{position:absolute;width:2px;height:2px;background:white;border-radius:50%;animation:twinkle 3s infinite ease-in-out}
+        @keyframes twinkle{0%,100%{opacity:0.3}50%{opacity:1}}
+        nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,23,42,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(249,115,22,0.1);padding:1rem 0;transition:all 0.3s ease}
+        nav.scrolled{background:rgba(15,23,42,0.95);box-shadow:0 4px 30px rgba(0,0,0,0.3)}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;color:var(--light);font-weight:700;font-size:1.25rem}
+        .logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+        .nav-links{display:flex;gap:2rem;list-style:none}
+        .nav-links a{color:var(--gray);text-decoration:none;font-size:0.95rem;font-weight:500;transition:color 0.3s;position:relative}
+        .nav-links a:hover{color:var(--light)}
+        .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--primary),var(--secondary));transition:width 0.3s}
+        .nav-links a:hover::after{width:100%}
+        .nav-cta{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:0.6rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;transition:transform 0.3s,box-shadow 0.3s;border:none;cursor:pointer}
+        .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(249,115,22,0.4)}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;position:relative}
+        .hero-content{max-width:900px}
+        .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(249,115,22,0.15);border:1px solid rgba(249,115,22,0.3);padding:0.5rem 1.25rem;border-radius:50px;font-size:0.85rem;color:var(--primary);margin-bottom:2rem;animation:fadeInDown 0.8s ease}
+        .hero-badge .pulse{width:8px;height:8px;background:var(--success);border-radius:50%;animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+        h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:1.5rem;background:linear-gradient(135deg,#fff 0%,#fdba74 50%,#7dd3fc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeInUp 0.8s ease 0.2s both}
+        .hero-subtitle{font-size:clamp(1.1rem,2.5vw,1.35rem);color:var(--gray);max-width:700px;margin:0 auto 2.5rem;animation:fadeInUp 0.8s ease 0.4s both}
+        .hero-cta-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeInUp 0.8s ease 0.6s both}
+        .btn-primary{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:1rem 2.5rem;border-radius:12px;text-decoration:none;font-weight:700;font-size:1.1rem;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(249,115,22,0.3)}
+        .btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(249,115,22,0.5)}
+        .btn-secondary{background:rgba(255,255,255,0.05);color:var(--light);padding:1rem 2.5rem;border-radius:12px;text-decoration:none;font-weight:600;font-size:1.1rem;border:1px solid rgba(255,255,255,0.1);transition:all 0.3s;display:inline-flex;align-items:center;gap:0.5rem}
+        .btn-secondary:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);transform:translateY(-3px)}
+        .promo-code{margin-top:2rem;padding:1rem 2rem;background:rgba(245,158,11,0.1);border:1px dashed var(--warning);border-radius:12px;display:inline-flex;align-items:center;gap:0.75rem;animation:fadeInUp 0.8s ease 0.8s both}
+        .promo-code span{color:var(--warning);font-weight:700;font-size:1.1rem}
+        .promo-code .code{background:var(--warning);color:var(--dark);padding:0.25rem 0.75rem;border-radius:6px;font-weight:800;font-size:1.2rem;letter-spacing:2px}
+        .stats-bar{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:4rem;animation:fadeInUp 0.8s ease 1s both}
+        .stat-item{text-align:center}
+        .stat-number{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .stat-label{color:var(--gray);font-size:0.9rem;margin-top:0.25rem}
+        section{padding:6rem 2rem;max-width:1200px;margin:0 auto}
+        .section-header{text-align:center;margin-bottom:4rem}
+        .section-tag{display:inline-block;background:rgba(249,115,22,0.15);color:var(--primary);padding:0.4rem 1rem;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:1rem}
+        h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:1rem;background:linear-gradient(135deg,#fff,#fdba74);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .section-desc{color:var(--gray);font-size:1.1rem;max-width:600px;margin:0 auto}
+        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+        .feature-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:20px;padding:2rem;transition:all 0.4s;position:relative;overflow:hidden}
+        .feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));transform:scaleX(0);transition:transform 0.4s}
+        .feature-card:hover{background:rgba(255,255,255,0.05);border-color:rgba(249,115,22,0.2);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+        .feature-card:hover::before{transform:scaleX(1)}
+        .feature-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.25rem}
+        .feature-card h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;color:var(--light)}
+        .feature-card p{color:var(--gray);font-size:0.95rem;line-height:1.7}
+        .services-tabs{display:flex;justify-content:center;gap:0.5rem;margin-bottom:3rem;flex-wrap:wrap}
+        .tab-btn{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--gray);padding:0.75rem 1.5rem;border-radius:10px;cursor:pointer;font-size:0.95rem;font-weight:600;transition:all 0.3s}
+        .tab-btn.active{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;border-color:transparent}
+        .tab-btn:hover:not(.active){background:rgba(255,255,255,0.1);color:var(--light)}
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+        .service-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:20px;padding:2rem;transition:all 0.4s;position:relative}
+        .service-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,0.3);border-color:rgba(249,115,22,0.2)}
+        .service-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+        .service-logo{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700}
+        .service-info h3{font-size:1.15rem;font-weight:700;color:var(--light)}
+        .service-info .tag{font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:4px;font-weight:600;margin-top:0.25rem;display:inline-block}
+        .tag-streaming{background:rgba(239,68,68,0.15);color:#f87171}
+        .tag-ai{background:rgba(99,102,241,0.15);color:#a5b4fc}
+        .tag-music{background:rgba(16,185,129,0.15);color:#34d399}
+        .tag-account{background:rgba(245,158,11,0.15);color:#fbbf24}
+        .service-desc{color:var(--gray);font-size:0.9rem;margin-bottom:1.25rem;line-height:1.7}
+        .service-price{display:flex;align-items:baseline;gap:0.5rem;margin-bottom:1.25rem}
+        .price{font-size:1.75rem;font-weight:800;color:var(--light)}
+        .price-unit{color:var(--gray);font-size:0.9rem}
+        .service-btn{display:block;width:100%;padding:0.875rem;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;text-align:center;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;border:none;cursor:pointer}
+        .service-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(249,115,22,0.4)}
+        .pricing-table{overflow-x:auto}
+        table{width:100%;border-collapse:collapse;background:rgba(255,255,255,0.03);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.05)}
+        thead{background:rgba(249,115,22,0.1)}
+        th{padding:1.25rem 1.5rem;text-align:left;font-weight:700;color:var(--light);font-size:0.95rem}
+        td{padding:1.25rem 1.5rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--gray);font-size:0.95rem}
+        tr:hover td{background:rgba(255,255,255,0.02)}
+        .price-highlight{color:var(--light);font-weight:700;font-size:1.1rem}
+        .price-original{text-decoration:line-through;color:var(--gray);font-size:0.85rem;margin-left:0.5rem}
+        .steps-container{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
+        .step-card{flex:1;min-width:250px;max-width:280px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:20px;padding:2.5rem 2rem;text-align:center;position:relative;transition:all 0.4s}
+        .step-card:hover{transform:translateY(-5px);border-color:rgba(249,115,22,0.2)}
+        .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:800;color:white;margin:0 auto 1.5rem}
+        .step-card h3{font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;color:var(--light)}
+        .step-card p{color:var(--gray);font-size:0.9rem;line-height:1.7}
+        .step-arrow{display:none}
+        @media(min-width:768px){.step-arrow{display:flex;align-items:center;color:var(--primary);font-size:1.5rem;font-weight:700}}
+        .faq-list{max-width:800px;margin:0 auto}
+        .faq-item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:16px;margin-bottom:1rem;overflow:hidden;transition:all 0.3s}
+        .faq-item:hover{border-color:rgba(249,115,22,0.2)}
+        .faq-question{padding:1.5rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;color:var(--light);font-size:1.05rem}
+        .faq-question::after{content:'+';font-size:1.5rem;color:var(--primary);transition:transform 0.3s}
+        .faq-item.active .faq-question::after{transform:rotate(45deg)}
+        .faq-answer{padding:0 1.5rem;max-height:0;overflow:hidden;transition:all 0.4s ease;color:var(--gray);line-height:1.7}
+        .faq-item.active .faq-answer{padding:0 1.5rem 1.5rem;max-height:300px}
+        .cta-section{text-align:center;background:linear-gradient(135deg,rgba(249,115,22,0.1),rgba(14,165,233,0.1));border-radius:24px;padding:4rem 2rem;border:1px solid rgba(249,115,22,0.15);position:relative;overflow:hidden}
+        .cta-section::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(249,115,22,0.05) 0%,transparent 70%);animation:rotate 20s linear infinite}
+        @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+        .cta-content{position:relative;z-index:1}
+        .cta-section h2{margin-bottom:1rem}
+        .cta-section p{color:var(--gray);font-size:1.1rem;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+        footer{background:rgba(15,23,42,0.8);border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2rem 2rem;text-align:center}
+        .footer-content{max-width:1200px;margin:0 auto}
+        .footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;flex-wrap:wrap}
+        .footer-links a{color:var(--gray);text-decoration:none;font-size:0.9rem;transition:color 0.3s}
+        .footer-links a:hover{color:var(--light)}
+        .footer-disclaimer{color:var(--gray);font-size:0.8rem;max-width:800px;margin:0 auto 1.5rem;line-height:1.7}
+        .footer-copy{color:var(--gray);font-size:0.85rem}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+        .fade-in{opacity:0;transform:translateY(30px);transition:all 0.6s ease}
+        .fade-in.visible{opacity:1;transform:translateY(0)}
+        .mobile-menu-btn{display:none;background:none;border:none;color:var(--light);font-size:1.5rem;cursor:pointer}
+        @media(max-width:768px){.nav-links{display:none}.mobile-menu-btn{display:block}.hero{padding:7rem 1.5rem 3rem}.hero-cta-group{flex-direction:column;align-items:center}.btn-primary,.btn-secondary{width:100%;max-width:300px;justify-content:center}.stats-bar{gap:2rem}section{padding:4rem 1.5rem}.services-tabs{gap:0.5rem}.tab-btn{padding:0.6rem 1rem;font-size:0.85rem}table{font-size:0.85rem}th,td{padding:1rem}}
+        .wechat-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center}
+        .wechat-modal.active{display:flex}
+        .wechat-box{background:var(--dark);border:1px solid rgba(249,115,22,0.3);border-radius:20px;padding:2.5rem;text-align:center;max-width:360px;width:90%;position:relative;animation:fadeInUp 0.3s ease}
+        .wechat-box h3{font-size:1.3rem;margin-bottom:0.5rem;background:linear-gradient(135deg,#fff,#fdba74);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .wechat-box p{color:var(--gray);margin-bottom:1.5rem;font-size:0.95rem}
+        .wechat-id{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:1rem 2rem;border-radius:12px;font-size:1.4rem;font-weight:800;letter-spacing:2px;margin-bottom:1.5rem;display:inline-block}
+        .wechat-close{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--light);padding:0.6rem 1.5rem;border-radius:8px;cursor:pointer;font-size:0.9rem;transition:all 0.3s}
+        .wechat-close:hover{background:rgba(255,255,255,0.1)}
+    </style>
+<base target="_blank">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+    <div class="stars-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="https://spotifyzc.com/?incode=jAnlL4" class="logo"><div class="logo-icon">✈️</div><span>飞行派</span></a>
+            <ul class="nav-links">
+                <li><a href="#features">核心优势</a></li>
+                <li><a href="#services">服务产品</a></li>
+                <li><a href="#pricing">价格参考</a></li>
+                <li><a href="#steps">使用流程</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+            <a href="https://spotifyzc.com/?incode=jAnlL4" class="nav-cta">立即访问官网 →</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="pulse"></span>已备案运营 · 4年+稳定服务 · 10万+成交订单</div>
+            <h1>飞行派<br>一站式数字订阅服务平台</h1>
+            <p class="hero-subtitle">AI 与流媒体，一站搞定。提供 ChatGPT、Netflix、Disney+、Spotify、Grok、Claude 等 65+ 种数字订阅方案。支付宝付款，自动发货，人工一对一售后。</p>
+            <div class="hero-cta-group">
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="btn-primary">🚀 立即进入官网</a>
+                <a href="#services" class="btn-secondary">📋 浏览全部服务</a>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item"><div class="stat-number">4年+</div><div class="stat-label">稳定运营</div></div>
+                <div class="stat-item"><div class="stat-number">10万+</div><div class="stat-label">成交订单</div></div>
+                <div class="stat-item"><div class="stat-number">5万+</div><div class="stat-label">服务顾客</div></div>
+                <div class="stat-item"><div class="stat-number">65+</div><div class="stat-label">可选方案</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="section-header fade-in">
+            <div class="section-tag">为什么选择飞行派</div>
+            <h2>三大核心优势</h2>
+            <p class="section-desc">从起飞到抵达，每一步都可追踪。让数字订阅购买更省心。</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon" style="background:rgba(16,185,129,0.15);color:#34d399">🛡️</div>
+                <h3>已备案运营</h3>
+                <p>正规备案平台，受监管机构监督，跑路风险极低。4年+稳定服务，10万+订单真实可查。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon" style="background:rgba(249,115,22,0.15);color:#fdba74">📦</div>
+                <h3>订阅种类丰富</h3>
+                <p>覆盖AI工具、流媒体、音乐、办公等65+种订阅方案，一个平台满足所有数字服务需求。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon" style="background:rgba(14,165,233,0.15);color:#7dd3fc">🎧</div>
+                <h3>售后人工一对一</h3>
+                <p>专业客服团队全程跟进，从商品选择、订单履约到售后协助，人工一对一贴心服务。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon" style="background:rgba(139,92,246,0.15);color:#c4b5fd">⚡</div>
+                <h3>自动发货秒到账</h3>
+                <p>系统自动化处理订单，付款后秒发账号信息，无需漫长等待，即买即用效率极高。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon" style="background:rgba(6,182,212,0.15);color:#67e8f9">💰</div>
+                <h3>价格极具竞争力</h3>
+                <p>ChatGPT Plus月付低至49.99元，Netflix月付35元，Spotify年付169元，相比官方节省大量费用。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-header fade-in">
+            <div class="section-tag">热门服务</div>
+            <h2>AI工具与流媒体全覆盖</h2>
+            <p class="section-desc">从娱乐到生产力，飞行派为您提供全方位的数字订阅解决方案</p>
+        </div>
+        <div class="services-tabs fade-in">
+            <button class="tab-btn active" onclick="filterServices('all')">全部服务</button>
+            <button class="tab-btn" onclick="filterServices('ai')">AI工具</button>
+            <button class="tab-btn" onclick="filterServices('streaming')">影音流媒体</button>
+            <button class="tab-btn" onclick="filterServices('other')">其他服务</button>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+            <div class="service-card fade-in" data-category="ai">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#10a37f,#0d8c6d)">GPT</div>
+                    <div class="service-info"><h3>ChatGPT 代充</h3><span class="tag tag-ai">AI工具</span></div>
+                </div>
+                <p class="service-desc">使用自己账号正规续费，有质保。可用GPT-4o模型，联网搜索、插件商店、DALL·E绘图。</p>
+                <div class="service-price"><span class="price">¥59</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="ai">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#10a37f,#0d8c6d)">GPT</div>
+                    <div class="service-info"><h3>ChatGPT 拼车</h3><span class="tag tag-ai">AI工具</span></div>
+                </div>
+                <p class="service-desc">自动发货，支持Plus & Image2原生账号。无需提供自己账号密码，即买即用。</p>
+                <div class="service-price"><span class="price">¥49.99</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="ai">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#d97757,#c45c3e)">C</div>
+                    <div class="service-info"><h3>Claude Pro 代充</h3><span class="tag tag-ai">AI工具</span></div>
+                </div>
+                <p class="service-desc">使用自己账号PRO订阅正规续费。可用Anthropic最新Claude模型，超长上下文，强大推理能力。</p>
+                <div class="service-price"><span class="price">¥169</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="ai">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">G</div>
+                    <div class="service-info"><h3>Grok 代充</h3><span class="tag tag-ai">AI工具</span></div>
+                </div>
+                <p class="service-desc">官方充值可用自己账号SuperGrok。X平台官方AI，实时联网，犀利风格，超长上下文。</p>
+                <div class="service-price"><span class="price">¥135</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="ai">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">G</div>
+                    <div class="service-info"><h3>Grok 拼车</h3><span class="tag tag-ai">AI工具</span></div>
+                </div>
+                <p class="service-desc">原生账号SuperGrok共享账号。更低价格享受Grok全部能力，自动发货，即买即用。</p>
+                <div class="service-price"><span class="price">¥34.9</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="streaming">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#e50914,#b20710)">N</div>
+                    <div class="service-info"><h3>Netflix 奈飞</h3><span class="tag tag-streaming">影音</span></div>
+                </div>
+                <p class="service-desc">支持同户验证，全球IP观看，自动发货。4K UHD超高清画质，独立观影记录。</p>
+                <div class="service-price"><span class="price">¥35</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="streaming">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#113ccf,#0652dd)">D+</div>
+                    <div class="service-info"><h3>Disney+ 订阅</h3><span class="tag tag-streaming">影音</span></div>
+                </div>
+                <p class="service-desc">迪士尼、漫威、国家地理、星战全集畅享。中文界面及中文字幕，独立子账户。</p>
+                <div class="service-price"><span class="price">¥179.9</span><span class="price-unit">/12个月</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="streaming">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#ff0000,#cc0000)">YT</div>
+                    <div class="service-info"><h3>YouTube Premium</h3><span class="tag tag-streaming">影音</span></div>
+                </div>
+                <p class="service-desc">去除广告、后台播放、离线下载，附带YouTube Music会员权益。升级您自己的账号。</p>
+                <div class="service-price"><span class="price">¥309</span><span class="price-unit">/12个月</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="streaming">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#00a8e1,#0077b6)">HBO</div>
+                    <div class="service-info"><h3>HBO Max 账号</h3><span class="tag tag-streaming">影音</span></div>
+                </div>
+                <p class="service-desc">支持中文，独享车位，观影记录独立。性价比超高，可观看西部世界、权力的游戏等。</p>
+                <div class="service-price"><span class="price">¥22</span><span class="price-unit">/月起</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="streaming">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#00a8e1,#005f73)">PV</div>
+                    <div class="service-info"><h3>Prime Video</h3><span class="tag tag-streaming">影音</span></div>
+                </div>
+                <p class="service-desc">亚马逊旗下流媒体，五人拼车、独立子账户。可看黑袍纠察队、指环王等亚马逊原创剧集。</p>
+                <div class="service-price"><span class="price">¥55</span><span class="price-unit">/6个月</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="music">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#1db954,#1ed760)">S</div>
+                    <div class="service-info"><h3>Spotify Premium</h3><span class="tag tag-music">音乐</span></div>
+                </div>
+                <p class="service-desc">自动兑换正规续费，升级自己账号。无广告音乐服务，高品质音频，海量曲库随时畅听。</p>
+                <div class="service-price"><span class="price">¥169</span><span class="price-unit">/12个月</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="other">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#58cc02,#43b000)">多</div>
+                    <div class="service-info"><h3>多邻国 Super</h3><span class="tag tag-account">其他</span></div>
+                </div>
+                <p class="service-desc">Super家庭组订阅，解锁无限爱心、免广告、个性化练习等全部Super功能，语言学习神器。</p>
+                <div class="service-price"><span class="price">¥59.99</span><span class="price-unit">/12个月</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+            <div class="service-card fade-in" data-category="other">
+                <div class="service-header">
+                    <div class="service-logo" style="background:linear-gradient(135deg,#007aff,#5856d6)">ID</div>
+                    <div class="service-info"><h3>苹果ID 独享</h3><span class="tag tag-account">其他</span></div>
+                </div>
+                <p class="service-desc">苹果账户独享可改密，用于下载海外App、订阅海外服务等场景，安全稳定。</p>
+                <div class="service-price"><span class="price">¥15</span><span class="price-unit">/个</span></div>
+                <a href="https://spotifyzc.com/?incode=jAnlL4" class="service-btn">立即购买 →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="section-header fade-in">
+            <div class="section-tag">价格参考</div>
+            <h2>热门服务价格一览</h2>
+            <p class="section-desc">飞行派价格极具竞争力，以下价格为参考价，以官网实时显示为准</p>
+        </div>
+        <div class="pricing-table fade-in">
+            <table>
+                <thead><tr><th>服务名称</th><th>类型</th><th>价格参考</th><th>特色说明</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>ChatGPT 代充</strong></td><td>AI订阅</td><td><span class="price-highlight">¥59</span><span class="price-original">官方$20</span></td><td>自己账号正规续费，有质保</td></tr>
+                    <tr><td><strong>ChatGPT 拼车</strong></td><td>AI合租</td><td><span class="price-highlight">¥49.99</span><span class="price-original">官方$20</span></td><td>原生账号，自动发货</td></tr>
+                    <tr><td><strong>Claude Pro</strong></td><td>AI订阅</td><td><span class="price-highlight">¥169</span><span class="price-original">官方$20</span></td><td>自己账号正规续费</td></tr>
+                    <tr><td><strong>Grok 代充</strong></td><td>AI订阅</td><td><span class="price-highlight">¥135</span></td><td>自己账号SuperGrok</td></tr>
+                    <tr><td><strong>Grok 拼车</strong></td><td>AI合租</td><td><span class="price-highlight">¥34.9</span></td><td>原生共享账号</td></tr>
+                    <tr><td><strong>Netflix 奈飞</strong></td><td>影音合租</td><td><span class="price-highlight">¥35</span><span class="price-original">官方¥165</span></td><td>支持同户验证，全球IP</td></tr>
+                    <tr><td><strong>Disney+</strong></td><td>影音订阅</td><td><span class="price-highlight">¥179.9</span><span class="price-original">/12个月</span></td><td>中文界面，解锁全部目录</td></tr>
+                    <tr><td><strong>YouTube Premium</strong></td><td>影音订阅</td><td><span class="price-highlight">¥309</span><span class="price-original">/12个月</span></td><td>无广告，后台播放，音乐会员</td></tr>
+                    <tr><td><strong>HBO Max</strong></td><td>影音合租</td><td><span class="price-highlight">¥22</span></td><td>中文独享车位，观影记录独立</td></tr>
+                    <tr><td><strong>Prime Video</strong></td><td>影音合租</td><td><span class="price-highlight">¥55</span><span class="price-original">/6个月</span></td><td>五人拼车，独立子账户</td></tr>
+                    <tr><td><strong>Spotify Premium</strong></td><td>音乐订阅</td><td><span class="price-highlight">¥169</span><span class="price-original">/12个月</span></td><td>升级自己账号，无广告高品质</td></tr>
+                    <tr><td><strong>多邻国 Super</strong></td><td>其他</td><td><span class="price-highlight">¥59.99</span><span class="price-original">/12个月</span></td><td>Super家庭组，语言学习</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="steps">
+        <div class="section-header fade-in">
+            <div class="section-tag">服务航线</div>
+            <h2>从起飞到抵达，只需四步</h2>
+            <p class="section-desc">商品选择、订单履约、售后协助串成一条清晰服务路线</p>
+        </div>
+        <div class="steps-container">
+            <div class="step-card fade-in">
+                <div class="step-number">1</div>
+                <h3>注册账号</h3>
+                <p>访问飞行派官网，快速注册账号，浏览65+种数字订阅服务，选择适合您的方案。</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-card fade-in">
+                <div class="step-number">2</div>
+                <h3>下单付款</h3>
+                <p>支持支付宝扫码付款，安全便捷，无需外币信用卡，国内用户轻松完成支付。</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-card fade-in">
+                <div class="step-number">3</div>
+                <h3>自动发货</h3>
+                <p>系统秒发账号信息或自动完成充值，无需等待人工处理，即买即用高效省心。</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-card fade-in">
+                <div class="step-number">4</div>
+                <h3>售后无忧</h3>
+                <p>遇到问题随时联系人工一对一客服，专业团队全链路售后支持，保障您的权益。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="section-header fade-in">
+            <div class="section-tag">常见问题</div>
+            <h2>您可能想了解的</h2>
+            <p class="section-desc">关于飞行派的常见疑问解答，帮助您更好地了解平台服务</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item fade-in">
+                <div class="faq-question">飞行派安全吗？</div>
+                <div class="faq-answer">飞行派是已备案运营的正规平台，受监管机构监督，跑路风险极低。平台稳定运营4年+，累计成交订单10万+，服务顾客5万+，每一步都有记录可查。</div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">ChatGPT代充和拼车有什么区别？</div>
+                <div class="faq-answer">代充是使用您自己的OpenAI账号进行正规续费充值，有质保，安全性最高；拼车是使用平台提供的共享原生账号，价格更低，自动发货即买即用。根据您的需求选择合适的方案即可。</div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">账号出现问题怎么办？</div>
+                <div class="faq-answer">飞行派提供人工一对一售后服务。遇到账号异常、失效等问题可随时联系客服。对于代充类服务提供质保承诺，确保您的权益得到保障。</div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">支持哪些支付方式？</div>
+                <div class="faq-answer">飞行派支持支付宝扫码付款，无需复杂操作，国内用户可便捷完成支付。无需外币信用卡，全程中文界面，对国内用户非常友好。</div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">多久可以开始使用？</div>
+                <div class="faq-answer">飞行派采用自动发货系统，大部分订单付款后秒级到账，您可以在订单页面立即查看账号信息或使用说明，无需漫长等待。</div>
+            </div>
+            <div class="faq-item fade-in">
+                <div class="faq-question">可以开具发票吗？</div>
+                <div class="faq-answer">飞行派作为正规备案平台，支持开具正规发票，企业用户也可放心使用。具体开票流程可咨询官网在线客服。</div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:3rem">
+            <button class="btn-primary" style="cursor:pointer;border:none;font-size:1rem" onclick="showQQModal()">💬 联系本站客服</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="cta-section fade-in">
+            <div class="cta-content">
+                <h2>准备好起飞了吗？</h2>
+                <p>加入5万+顾客的选择，用更低的价格享受全球优质数字服务。支持支付宝，自动发货，人工一对一售后。</p>
+                <div class="hero-cta-group" style="justify-content:center">
+                    <a href="https://spotifyzc.com/?incode=jAnlL4" class="btn-primary">🚀 立即进入官网</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://spotifyzc.com/?incode=jAnlL4">飞行派官网</a>
+                <a href="#features">核心优势</a>
+                <a href="#services">服务产品</a>
+                <a href="#pricing">价格参考</a>
+                <a href="#faq">常见问题</a>
+            </div>
+            <p class="footer-disclaimer">本页面为飞行派（Feixingpai）推广页面，所有服务均由飞行派平台提供。价格信息仅供参考，以官网实时显示为准。如有任何问题，请联系飞行派官方客服。</p>
+            <p class="footer-copy">© 2026 飞行派推广页面</p>
+        </div>
+    </footer>
+
+    <div class="wechat-modal" id="qqModal" onclick="if(event.target===this)closeQQModal()">
+        <div class="wechat-box">
+            <h3>联系本站客服</h3>
+            <p>添加客服QQ进行咨询，备注"飞行派"即可</p>
+            <div class="wechat-id">3930323142</div>
+            <button class="wechat-close" onclick="closeQQModal()">关闭</button>
+        </div>
+    </div>
+
+    <script>
+        function createStars(){const c=document.getElementById('stars');for(let i=0;i<100;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=Math.random()*0.5+0.2;const sz=Math.random()*2+1;s.style.width=sz+'px';s.style.height=sz+'px';c.appendChild(s)}}createStars();
+        window.addEventListener('scroll',()=>{const n=document.getElementById('navbar');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled')});
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:0.1});
+        document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+        function filterServices(cat){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active');document.querySelectorAll('.service-card').forEach(card=>{if(cat==='all'||card.dataset.category===cat)card.style.display='block';else card.style.display='none'})}
+        document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')});item.classList.toggle('active')})});
+        function showQQModal(){document.getElementById('qqModal').classList.add('active')}
+        function closeQQModal(){document.getElementById('qqModal').classList.remove('active')}
+        function toggleMenu(){const nav=document.querySelector('.nav-links');nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='100%';nav.style.left='0';nav.style.right='0';nav.style.background='rgba(15,23,42,0.95)';nav.style.flexDirection='column';nav.style.padding='1rem';nav.style.gap='1rem';nav.style.backdropFilter='blur(20px)'}
+    </script>
+</body>
+</html>
