@@ -1,6 +1,6 @@
 # 一文详解Google AI Pro的详细购买流程2026
 
-对于经常使用 AI 工具的朋友来说，Google AI Pro（前身为 Gemini Advanced）几乎是绕不开的订阅之一：官方定价 19.99 美元/月，包含 Gemini 系列旗舰模型的高额使用权限、Deep Research 深度研究、1M 超长上下文，以及 5TB 的 Google 云端存储空间（覆盖 Gmail、Drive、Photos）。但对于国内用户来说，直接订阅官方渠道存在不少门槛：需要海外支付方式、需要解决网络环境问题，长期算下来开销不小。本文就以 **橙子ID（OrangID）平台**（官网：<https://orangid.com/r/e644qz>）为例，手把手教大家如何用更低的成本、更简单的流程，买到 Google AI Pro 会员。
+对于经常使用 AI 工具的朋友来说，Google AI Pro（前身为 Gemini Advanced）几乎是绕不开的订阅之一：官方定价 19.99 美元/月，包含 Gemini 系列旗舰模型的高额使用权限、Deep Research 深度研究、1M 超长上下文，以及 5TB 的 Google 云端存储空间（覆盖 Gmail、Drive、Photos）。但对于国内用户来说，直接订阅官方渠道存在不少门槛：需要海外支付方式、需要解决网络环境问题，长期算下来开销不小。本文就以 **橙子ID（OrangID）平台**（官网入口：<https://314ai.github.io>）为例，手把手教大家如何用更低的成本、更简单的流程，买到 Google AI Pro 会员。
 
 ---
 
@@ -79,7 +79,7 @@
 
 Google AI Pro 官方每月 19.99 美元的价格不算贵，但对国内用户而言，支付门槛和汇率成本让"划算"打了折扣。通过橙子ID这类正规合租平台，用不到三折的价格获得几乎相同的使用体验，无疑是目前性价比最高的入手方式。
 
-**立即体验** 👉 <https://orangid.com/r/e644qz>
+**立即体验** 👉 <https://314ai.github.io>
 
 以上就是 Google AI Pro 通过橙子ID平台的完整购买流程，希望对你有所帮助。如果你还有其他 AI 工具的订阅需求，这个平台也基本都能一站搞定。
 
